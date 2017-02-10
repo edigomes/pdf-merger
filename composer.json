@@ -14,5 +14,6 @@
         "classmap": [
             "src/PDFMerger/PDFMerger.php"
         ]
-    }
+    },
+    "minimum-stability": "dev"
 }
