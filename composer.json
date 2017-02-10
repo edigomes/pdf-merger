@@ -2,7 +2,7 @@
     "name": "edigomes/pdf-merger",
     "description": "PDF File Merger for PHP5",
     "require": {
-        "itbz/fpdi": "dev-master"
+        "itbz/fpdi": "^1.6.0"
     },
     "authors": [
         {
@@ -14,6 +14,5 @@
         "classmap": [
             "src/PDFMerger/PDFMerger.php"
         ]
-    },
-    "minimum-stability": "dev"
+    }
 }
