@@ -1,8 +1,8 @@
 {
-    "name": "clegginabox/pdf-merger",
+    "name": "edigomes/pdf-merger",
     "description": "PDF File Merger for PHP5",
     "require": {
-        "itbz/fpdi": "dev-master"
+        "itbz/fpdf": "^1.7"
     },
     "authors": [
         {
