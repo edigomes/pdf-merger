@@ -1,4 +1,4 @@
-#PDFMerger for PHP (PHP 5 Compatible)
+#PDFMerger for PHP (PHP 5 or 7 Compatible)
 
 Original written by http://pdfmerger.codeplex.com/team/view<br />
 Forked from https://github.com/myokyawhtun/PDFMerger
