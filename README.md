@@ -5,8 +5,7 @@ Forked from https://github.com/myokyawhtun/PDFMerger
 
 ## Composer Compatible
 
-I've just forked this package to make it compatible with composer
-
+I've just forked this package to make it compatible with composer and work with pdf from URL
 To install add this line to your composer.json
 
 ```"clegginabox/pdf-merger": "dev-master"```
@@ -16,13 +15,8 @@ To install add this line to your composer.json
 
 $pdf = new \Clegginabox\PDFMerger\PDFMerger;
 
-$pdf->addPDF('samplepdfs/one.pdf', '1, 3, 4');
-$pdf->addPDF('samplepdfs/two.pdf', '1-2');
-$pdf->addPDF('samplepdfs/three.pdf', 'all');
-
-//You can optionally specify a different orientation for each PDF
-$pdf->addPDF('samplepdfs/one.pdf', '1, 3, 4', 'L');
-$pdf->addPDF('samplepdfs/two.pdf', '1-2', 'P');
+$pdf->addPDF(file_get_contents('http://beta.local/test1.pdf'));
+$pdf->addPDF(file_get_contents('http://beta.local/test2.pdf');
 
 $pdf->merge('file', 'samplepdfs/TEST2.pdf', 'P');
 

@@ -40,7 +40,8 @@ class PDFMerger
      */
     public function addPDF($filepath, $pages = 'all', $orientation = null)
     {
-        if (file_exists($filepath)) {
+        //if (file_exists($filepath)) {
+        if ($filepath) {
             if (strtolower($pages) != 'all') {
                 $pages = $this->_rewritepages($pages);
             }
@@ -73,8 +74,12 @@ class PDFMerger
             $filename  = $file[0];
             $filepages = $file[1];
             $fileorientation = (!is_null($file[2])) ? $file[2] : $orientation;
+            
+            $tmpfname = tempnam('', '_pdf_merge');
+            //$img = file_get_contents();
+            file_put_contents($tmpfname, $filename);
 
-            $count = $fpdi->setSourceFile($filename);
+            $count = $fpdi->setSourceFile($tmpfname);
 
             //add the pages
             if ($filepages == 'all') {
