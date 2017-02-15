@@ -8,7 +8,7 @@ Forked from https://github.com/myokyawhtun/PDFMerger
 I've just forked this package to make it compatible with composer and work with pdf from URL
 To install add this line to your composer.json
 
-```"clegginabox/pdf-merger": "dev-master"```
+```"edigomes/pdf-merger": "dev-master"```
 
 ### Example Usage
 ```php
